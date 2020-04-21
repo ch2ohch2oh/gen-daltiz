@@ -23,6 +23,7 @@ const double mass_lambdac = 2.28646;
 const Double_t mass_sigmac0 = 2.45375;
 const Double_t gamma_sigmac0 = 0.00183;
 
+// Coupling constants
 const Double_t g13 = 0.0;
 const Double_t g5 = 1.0;
 
@@ -126,8 +127,6 @@ void gen_dalitz()
     TGenPhaseSpace gen;
     gen.SetDecay(mom, 3, daug_masses);
     double max_weight = gen.GetWtMax();
-
-    
 
     TH2D * hist = new TH2D("hist", "", 100, 0.075, 0.12, 100, 5.87, 6.20);
     TH1D * hist_amp2 = new TH1D("hist_amp2", "", 100, 0, 10);
