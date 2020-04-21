@@ -1,5 +1,8 @@
 // 
-// Generate unweighted three-body phasespace decay events
+// Generate Lambda_c(2625)+ to Lambda_c+ pi+ pi- Dalitz plot
+//
+// Currently only T1, T3, T5 and their interferences are included.
+// 
 // 
 #include "TComplex.h"
 #include "TLorentzRotation.h"
